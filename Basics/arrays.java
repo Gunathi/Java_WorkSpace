@@ -53,5 +53,36 @@ public class Main {
             }
             System.out.println();
         }
+
+        //Jagged array
+        System.out.println("Jagged array....");
+
+        int Jarr[][] = new int[3][]; //this is the declaration of a jagged array
+
+        Jarr[0] = new int[3]; //sizes of each row
+        Jarr[1] = new int[4];
+        Jarr[2] = new int[2];
+
+        for(int i = 0; i < Jarr.length; i++){
+            for(int j = 0; j < Jarr[i].length; j++) {
+                Jarr[i][j] = (int) (Math.random() * 10);
+            }
+        }
+
+        for(int i = 0; i < Jarr.length; i++){
+            for(int j = 0; j < Jarr[i].length; j++) {
+                System.out.print(Jarr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        //access elements of array in enhansing method
+        System.out.println("Access in enhansing method....");
+        for(int n[]: Jarr){
+            for(int m:n){
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
     }
 }
