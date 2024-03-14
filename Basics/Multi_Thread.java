@@ -24,6 +24,7 @@ public class Multi_Thread {
         A obj1 = new A();
         B obj2 = new B();
 
+        obj1.setPriority(Thread.MIN_PRIORITY);
         obj1.start(); //Call the method run() using start() method
         obj2.start();
     }
